@@ -17,8 +17,6 @@
 			 && isset( $_REQUEST[ "health" ] ) 
 		   ) // Check all setted
 		{
-			// Add the animal
-
 			// Change what to display
 			$results_page = 1;
 		}

@@ -8,11 +8,10 @@
 	$results_page = 0;
 
 	if ( isset( $_REQUEST[ "add" ] ) )
-		if ( $_REQUEST[ "add" ] == "Add"
+		if ( $_REQUEST[ "add" ] == "Search"
 			 && isset( $_REQUEST[ "park" ] )
 		   ) // Check all setted
 		{
-
 			// Change what to display
 			$results_page = 1;
 		}
@@ -60,7 +59,7 @@
 						}
 					?>
 				</select><br>
-				<input type = "submit" name = "add" value = "Add" >
+				<input type = "submit" name = "add" value = "Search" >
 			</form>
 		</div>
 	<?php
@@ -75,8 +74,17 @@
 
 		$result = mysqli_query( $park_connection, $query );
 
-		for ( $i = 0; $i < mysqli_num_rows( $result ); $i++ )
-		echo mysqli_fetch_array( $result )["name"];
+		// Check if something was found
+		if ( mysqli_num_rows( $result ) == 0 ) // Nothing
+		{
+			echo "No animals in this park";
+		}
+		else
+		{
+			// Print the species found
+			for ( $i = 0; $i < mysqli_num_rows( $result ); $i++ )
+				echo mysqli_fetch_array( $result )["name"];
+		}
 
 		// Clear the request
 		$_REQUEST = array();

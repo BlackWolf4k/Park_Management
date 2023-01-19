@@ -1,0 +1,59 @@
+.html, body
+{
+	background-image: url( "../images/background.jpg" );
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page_header
+{
+	text-align: center;
+	margin: 3%;
+}
+
+.page_header_title
+{
+	text-align: center;
+	font-size: 50px;
+}
+
+.columns_holder
+{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+}
+
+.column
+{
+	flex-basis: 33.3%;
+	text-align: center;
+}
+
+.column_title
+{
+	font-size: 30px;
+}
+
+.options_container
+{
+	background-color: rgba( 235, 235, 235, 0.3 );
+	margin: 2%;
+	padding: 2%;
+	border-radius: 10px;
+}
+
+.option
+{
+	margin: 10%;
+}
+
+.option:hover
+{
+	background-color: rgba( 235, 235, 235, 0.2 );
+}
+
+.option_title
+{
+	font-size: 20px;
+}

@@ -12,13 +12,19 @@
 			 && isset( $_REQUEST[ "species" ] )
 			 && isset( $_REQUEST[ "sex" ] )
 			 && isset( $_REQUEST[ "birthday" ] )
-			 && isset( $_REQUEST[ "health" ] ) 
+			 && isset( $_REQUEST[ "health" ] )
+			 && trim( $_REQUEST[ "health" ] != "" ) 
 		   ) // Check all setted
 		{
 			// Clear the values
+			$park = mysqli_real_escape_string( $park_connection, $_REQUEST[ "park" ] );
+			$orders = mysqli_real_escape_string( $park_connection, $_REQUEST[ "orders" ] );
+			$species = mysqli_real_escape_string( $park_connection, $_REQUEST[ "species" ] );
+			$sex = mysqli_real_escape_string( $park_connection, $_REQUEST[ "sex" ] );
+			$birthday = mysqli_real_escape_string( $park_connection, $_REQUEST[ "birthday" ] );
 			$health = mysqli_real_escape_string( $park_connection, $_REQUEST[ "health" ] );
 
-			$query = "INSERT INTO animals ( `sex`, `birthday`, `species_id`, `park_id`, `health` ) VALUES ( " . $_REQUEST[ "sex" ] . ", '" . $_REQUEST[ "birthday" ] . "', " . $_REQUEST[ "species" ] . ", " . $_REQUEST[ "orders" ] . ", '" . $health . "' )";
+			$query = "INSERT INTO animals ( `sex`, `birthday`, `species_id`, `park_id`, `health` ) VALUES ( " . $sex . ", '" . $birthday . "', " . $species . ", " . $orders . ", '" . $health . "' )";
 
 			mysqli_query( $park_connection, $query );
 
@@ -35,7 +41,7 @@
 		<title>Insert Animal</title>
 		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
-	<body>
+	<body class = "new_animal" >
 	<div class = "animal_div" >
 		<a class = "animal_div_title" >Insert Animal</a>
 		<form name = "animal_form" method = "post" action = "" >

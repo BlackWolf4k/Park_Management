@@ -10,6 +10,8 @@
 	if ( isset( $_REQUEST[ "add" ] ) )
 		if ( $_REQUEST[ "add" ] == "Calculate"
 			 && isset( $_REQUEST[ "park" ] )
+			 && isset( $_REQUEST[ "orders" ] )
+			 && isset( $_REQUEST[ "species" ] )
 		   ) // Check all setted
 		{
 			// Change what to display
@@ -22,9 +24,9 @@
 		<title>Park Menagement</title>
 		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
-	<body>
+	<body class = "get_age" >
 	<div class = "informations_div" >
-		<a>View Park Species</a>
+		<a class = "informations_div_title" >View Park Species</a>
 		<form name = "informations_form" method = "post" action = "" >
 			<label>Select Park</label><br>
 			<select name = "park" onchange = "this.form.submit()" >
@@ -155,7 +157,9 @@
 				$age = intval( $age / 365 );
 				$scale = "years";
 			}
-			echo "<a>Found " . mysqli_num_rows( $result ) . " animals of the species with a average age of: <b>" . $age . "</b> " . $scale . "</a>";
+			echo "<div class = 'age_result' >
+					<a>Found <b>" . mysqli_num_rows( $result ) . "</b> animals of this species.<br>The average age is: <b>" . $age . "</b> " . $scale . "</a>
+				</div>";
 		}
 
 		// Clear the request

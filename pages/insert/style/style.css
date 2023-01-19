@@ -1,13 +1,27 @@
-body
+.new_animal
 {
 	background-image: url( "../images/background0.jpg" );
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
+.new_order
+{
+	background-image: url( "../images/background1.jpg" );
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.new_species
+{
+	background-image: url( "../images/background2.jpg" );
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .animal_div
 {
-	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.7);
 	text-align: center;
 	margin: auto;
 	width: 20%;

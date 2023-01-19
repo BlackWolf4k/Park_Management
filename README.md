@@ -5,7 +5,7 @@ Park Management is a web system meant for park rangers, allowing them to get inf
 
 # Functionalities
 
-![The home page](https://github.com//BlackWolf4k/Park_Management/Screenshots/home_page.png?raw=true)
+![The home page](https://github.com/BlackWolf4k/Park_Management/blob/main/Screenshots/home_page.png?raw=true)
 
 The main functionalities are:
 - Add a new animal / plant

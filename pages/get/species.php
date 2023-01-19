@@ -3,7 +3,7 @@
 	session_start();
 
 	// Connect to the database
-	include( "../connection/park_connect.php" );
+	include( "../../connection/park_connect.php" );
 
 	$results_page = 0;
 
@@ -20,6 +20,7 @@
 <html>
 	<head>
 		<title>Park Menagement</title>
+		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
 	<body>
 	<?php
@@ -27,13 +28,13 @@
 	// $result = mysqli_query( $park_connection, $query );
 	// for ( $i = 0; $i < mysqli_num_rows( $result ); $i++ )
 	// 	echo mysqli_fetch_array( $result )["name"];
-	if ( $results_page != 1 )
+	if ( 1 )
 	{
 	?> 
-		<div class = "select_park_div" >
+		<div class = "informations_div" >
 			<a>View Park Species</a>
-			<form name = "select_park_form" method = "post" action = "" >
-				<a>Select Park<a><br>
+			<form name = "informations_form" method = "post" action = "" >
+				<label>Select Park</label><br>
 				<select name = "park" >
 					<option disabled selected value>Park</option>
 					<?php
@@ -59,12 +60,12 @@
 						}
 					?>
 				</select><br>
-				<input type = "submit" name = "add" value = "Search" >
+				<input class = "add_button" type = "submit" name = "add" value = "Calculate" >
 			</form>
 		</div>
 	<?php
 	}
-	else
+	if ( $results_page == 1 )
 	{
 		$park_id = mysqli_real_escape_string( $park_connection, $_REQUEST[ "park" ] );
 

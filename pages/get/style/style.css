@@ -1,0 +1,29 @@
+label
+{
+	font-size: 20px;
+}
+
+.informations_div
+{
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	margin: auto;
+	width: 20%;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 10px;
+	margin-top: 10%;
+}
+
+.informations_form
+{}
+
+.add_button
+{
+	background-color: white;
+	border: 1px solid rgb(182, 182, 182);
+	border-radius: 20px;
+	margin-top: 6%;
+	padding: 3%;
+	width: 100%;
+}

@@ -28,12 +28,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Insert Animal</title>
+		<title>Insert Order</title>
 		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
 	<body class = "new_order" >
 	<div class = "animal_div" >
-		<a class = "animal_div_title" >Insert Animal</a>
+		<a class = "animal_div_title" >Insert Order</a>
 		<form name = "animal_form" method = "post" action = "" >
 			<label>Order Name</label><br>
 			<input class = "form_text_input" type = "text" name = "order_name" ><br>

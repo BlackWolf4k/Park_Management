@@ -30,12 +30,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Insert Animal</title>
+		<title>Insert Species</title>
 		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
 	<body class = "new_species" >
 	<div class = "animal_div" >
-		<a class = "animal_div_title" >Insert Animal</a>
+		<a class = "animal_div_title" >Insert Species</a>
 		<form name = "animal_form" method = "post" action = "" >
 			<label>Select Order</label>
 			<select name = "orders" onchange = "this.form.submit()" >

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Park Menagement</title>
+		<title>Park Management</title>
 		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
 	<body>
 		<div class = "page_header" >
-			<a class = "page_header_title" >Welcone to Park Manegment</a>
+			<a class = "page_header_title" >Welcone to Park Management</a>
 		</div>
 
 		<div class = "columns_holder" >
@@ -39,7 +39,7 @@
 						<p class = "option_description" >If you want to know the medium age of a species in the park, this is the page for you</p>
 					</div>
 					<div class = "option" >
-						<a class = "option_title" href = "./pages/get/animals.php" >Get Animals</a>
+						<a class = "option_title" href = "./pages/get/work_in_progress.php" >Get Animals</a>
 						<p class = "option_description" >Get a list of all the animals in the database</p>
 					</div>
 				</div>

@@ -21,12 +21,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Park Menagement</title>
+		<title>Average Age</title>
 		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
 	<body class = "get_age" >
 	<div class = "informations_div" >
-		<a class = "informations_div_title" >View Park Species</a>
+		<a class = "informations_div_title" >View Average Age</a>
 		<form name = "informations_form" method = "post" action = "" >
 			<label>Select Park</label><br>
 			<select name = "park" onchange = "this.form.submit()" >

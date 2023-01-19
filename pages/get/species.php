@@ -20,7 +20,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Park Menagement</title>
+		<title>Park Species</title>
 		<link rel = "stylesheet" href = "style/style.css" >
 	</head>
 	<body class = "get_species" >
